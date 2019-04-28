@@ -1,8 +1,12 @@
 package model;
 
-public class Ma implements IPiece {
+public class Ma extends AbstractPiece {
     @Override
     public String getName() {
         return "马";
     }
+
+
+
+
 }

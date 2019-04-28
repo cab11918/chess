@@ -1,8 +1,13 @@
 package model;
 
-public class Jiang implements IPiece {
+public class Jiang extends AbstractPiece {
+
     @Override
     public String getName() {
         return "将";
     }
+
+
+
+
 }

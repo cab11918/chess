@@ -1,8 +1,11 @@
 package model;
 
-public class Shi implements IPiece {
+public class Shi extends AbstractPiece {
+
     @Override
     public String getName() {
         return "士";
     }
+
+
 }

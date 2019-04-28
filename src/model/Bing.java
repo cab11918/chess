@@ -1,8 +1,11 @@
 package model;
 
-public class Bing implements IPiece{
+public class Bing extends AbstractPiece{
+
     @Override
     public String getName() {
         return "兵";
     }
+
+
 }

@@ -1,5 +1,19 @@
 package model;
 
+import java.awt.Point;
+
 public interface IPiece {
-    String getName();
+
+  String getName();
+
+  void setSide(int s);
+
+  int getSide();
+
+  void setPos(int x, int y);
+
+  void move(int fromRow, int fromCol, int toRow, int toCol);
+
+  Point getPos();
+
 }
