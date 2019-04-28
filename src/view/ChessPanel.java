@@ -26,7 +26,7 @@ public class ChessPanel extends JPanel {
   }
 
   public void drawPiece(Graphics g) {
-    g.setFont(new Font("Arial", Font.PLAIN, 20));
+    g.setFont(new Font("Times", Font.PLAIN, 20));
     g.setColor(Color.black);
     g.drawPolyline(new int[]{25, 125, 25, 125, 375, 475, 375, 475},
         new int[]{175, 275, 275, 175, 175, 275
@@ -77,7 +77,7 @@ public class ChessPanel extends JPanel {
 
   public void highLight(Point p) {
 
-    getGraphics().fillRoundRect(p.x - p.x % 50, p.y - p.y % 50, 50, 50,10,10);
+    getGraphics().drawRoundRect(p.x - p.x % 50, p.y - p.y % 50, 50, 50,20,20);
   }
 
 

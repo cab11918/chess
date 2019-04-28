@@ -7,18 +7,15 @@ import view.IView;
 
 public class HighLight implements ICommand {
 
-  IChess m;
-  IView v;
+
   Point pos;
 
-  public HighLight(IChess m, IView v, Point p) {
-    this.m = m;
-    this.v = v;
+  public HighLight(Point p) {
     this.pos = p;
   }
 
   @Override
   public void goCommand(IChess model, IView view) {
-    v.highLight(pos);
+    view.highLight(pos);
   }
 }
