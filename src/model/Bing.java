@@ -1,8 +1,19 @@
 package model;
 
-public class Bing implements IPiece{
+import java.awt.*;
+
+public class Bing extends AbstractPiece{
+
+    Bing(Point p, int s) {
+        this.pos = p;
+        this.side =s;
+    }
+
+
     @Override
     public String getName() {
         return "兵";
     }
+
+
 }
